@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/mlops-zoomcamp/02%20-experiment-tracking/mlruns/921358845299920828/c8bea13199fb4d018d9aada279ced497/artifacts
+end_time: 1716833098561
+entry_point_name: ''
+experiment_id: '921358845299920828'
+lifecycle_stage: active
+run_id: c8bea13199fb4d018d9aada279ced497
+run_name: bright-colt-470
+run_uuid: c8bea13199fb4d018d9aada279ced497
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716833086949
+status: 3
+tags: []
+user_id: codespace
