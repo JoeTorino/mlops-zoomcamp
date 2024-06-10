@@ -1,0 +1,99 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/data_loaders/yellow_taxi__march_2023__reader.py
+  downstream_blocks:
+  - yellow_taxi_transformer
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Yellow Taxi (March 2023) Reader
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: yellow_taxi__march_2023__reader
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/transformers/yellow_taxi_transformer.py
+  downstream_blocks:
+  - dictionary_vectoriser
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Yellow Taxi Transformer
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - yellow_taxi__march_2023__reader
+  uuid: yellow_taxi_transformer
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/transformers/dictionary_vectoriser.py
+  downstream_blocks:
+  - linear_regression_model_exporter
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: dictionary_vectoriser
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - yellow_taxi_transformer
+  uuid: dictionary_vectoriser
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/data_exporters/linear_regression_model_exporter.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Linear Regression Model Exporter
+  retry_config: null
+  status: failed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - dictionary_vectoriser
+  uuid: linear_regression_model_exporter
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-06-10 18:48:46.358414+00:00'
+data_integration: null
+description: Homework 3 - Creating pipeline for Taxi Model
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: Taxi Pipeline
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: taxi_pipeline
+variables_dir: /home/src/mage_data/homework_03
+widgets: []

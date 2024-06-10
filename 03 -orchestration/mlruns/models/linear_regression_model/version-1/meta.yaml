@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1718051908953
+current_stage: None
+description: null
+last_updated_timestamp: 1718051908953
+name: linear_regression_model
+run_id: b8c103f9b10143a185c21ef685aac80c
+run_link: null
+source: file:///home/src/mlruns/0/b8c103f9b10143a185c21ef685aac80c/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///home/src/mlruns/0/b8c103f9b10143a185c21ef685aac80c/artifacts/model
+user_id: null
+version: 1
