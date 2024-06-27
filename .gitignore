@@ -1,0 +1,8 @@
+# Ignore Parquet files in the root directory
+/*.parquet
+
+# Ignore Parquet files in the data directory
+/data/*.parquet
+
+# Ignore Parquet files in all subdirectories
+**/*.parquet
